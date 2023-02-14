@@ -1,1 +1,8 @@
 /* GÆLDER TIL ALLE SIDER FX FARVER*/
+
+/*FONT*/
+body {
+  font-family: kiln-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
