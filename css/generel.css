@@ -1,8 +1,26 @@
 /* GÆLDER TIL ALLE SIDER FX FARVER*/
 
-/*FONT*/
-body {
+/* Nulstilling af margin og padding på alle elementer, samt ændring af box model på alle elementer */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Normalisering af font og linjehøjde på dokumentets tekster, samt nedtoning af tekstfarven */
+body,
+.p {
   font-family: kiln-sans, sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 1.6;
+  color: #d35b2b;
+  background-color: #fffbf5;
+}
+
+/* Normalisering af billeder */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
