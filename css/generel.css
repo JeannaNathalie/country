@@ -1,1 +1,11 @@
 /* GÆLDER TIL ALLE SIDER FX FARVER*/
+
+/* Farver */
+html {
+  --primary-color: #fffbf5;
+  --secondary-color: #d35b2b;
+  --soldout-color: grey;
+  --cta-color: #3c4c8c;
+  --text-color: black;
+  --footer-color: rgb(145, 189, 201);
+}
