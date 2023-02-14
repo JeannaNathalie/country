@@ -1,5 +1,6 @@
 /* GÆLDER TIL ALLE SIDER FX FARVER*/
 
+<<<<<<< HEAD
 /* Farver */
 html {
   --primary-color: #fffbf5;
@@ -8,4 +9,29 @@ html {
   --cta-color: #3c4c8c;
   --text-color: black;
   --footer-color: rgb(145, 189, 201);
+=======
+/* Nulstilling af margin og padding på alle elementer, samt ændring af box model på alle elementer */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Normalisering af font og linjehøjde på dokumentets tekster, samt nedtoning af tekstfarven */
+body,
+.p {
+  font-family: kiln-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #d35b2b;
+  background-color: #fffbf5;
+}
+
+/* Normalisering af billeder */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+>>>>>>> 4f7d367da84f40451455bde55225987cf14a3366
 }
