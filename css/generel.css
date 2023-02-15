@@ -1,6 +1,5 @@
 /* GÆLDER TIL ALLE SIDER FX FARVER*/
 
-<<<<<<< HEAD
 /* Farver */
 html {
   --primary-color: #fffbf5;
@@ -9,7 +8,8 @@ html {
   --cta-color: #3c4c8c;
   --text-color: black;
   --footer-color: rgb(145, 189, 201);
-=======
+}
+
 /* Nulstilling af margin og padding på alle elementer, samt ændring af box model på alle elementer */
 * {
   box-sizing: border-box;
@@ -33,5 +33,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
->>>>>>> 4f7d367da84f40451455bde55225987cf14a3366
+}
+
+main {
+  margin: 0rem 8rem 0rem 8rem;
 }
