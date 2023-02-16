@@ -35,7 +35,7 @@ img {
   display: block;
 }
 
-/*FARVER/HEADER */
+/*FARVER/HEADER + MARGIN PÅ ALT*/
 
 h1 {
   color: #004885;
@@ -45,6 +45,12 @@ h1 {
 h2 {
   font-size: 3rem;
   color: #d35b2b;
+}
+
+body,
+header {
+  margin: 1rem;
+  gap: 1rem;
 }
 
 .headerNavigation,
