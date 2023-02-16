@@ -7,7 +7,6 @@ html {
   --soldout-color: grey;
   --cta-color: #3c4c8c;
   --text-color: black;
-  --footer-color: rgb(145, 189, 201);
 }
 
 /* Nulstilling af margin og padding på alle elementer, samt ændring af box model på alle elementer */
