@@ -14,7 +14,7 @@ body,
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
-  color: #d35b2b;
+  color: #000000;
   background-color: #fffbf5;
 }
 
@@ -23,4 +23,14 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+h1 {
+  color: #004885;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #d35b2b;
 }
