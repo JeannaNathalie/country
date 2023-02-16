@@ -35,12 +35,27 @@ img {
   display: block;
 }
 
+/*FARVER/HEADER */
+
 h1 {
   color: #004885;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
   font-size: 3rem;
   color: #d35b2b;
+}
+
+.headerNavigation,
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
