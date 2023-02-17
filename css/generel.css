@@ -36,31 +36,48 @@ img {
 
 /*FARVER/HEADER + MARGIN PÅ ALT*/
 
-h1 {
-  color: #004885;
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 3rem;
-  color: #d35b2b;
-}
-
-body,
-header {
-  margin: 1rem;
-  gap: 1rem;
-}
-
 .headerNavigation,
 ul {
+  grid-column: 3/4;
   display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
+  align-items: flex-end;
+  gap: 7rem;
   margin: 1rem;
+  list-style-type: none;
+  font-size: 3rem;
 }
-
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--header-color);
+  margin: 0%;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+}
+.logo {
+  max-width: 40%;
+  margin: 1rem;
+}
+
+ul img {
+  max-width: 50%;
+  background-color: #3c4c8c;
+}
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
