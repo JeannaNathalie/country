@@ -36,8 +36,8 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 25px;
+  font-size: 1rem;
+  border-radius: 2rem;
   margin: 1rem;
   font-family: kiln-sans, sans-serif;
 }
