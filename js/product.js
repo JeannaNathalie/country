@@ -21,8 +21,6 @@ function showAlbum(album) {
   document.querySelector(".produktinfo .tracks").textContent = album.tracks;
   document.querySelector(".produktinfo .price").textContent = album.price;
   document.querySelector(".spotify").innerHTML = album.spotify;
-  //   document.querySelector(".produktinfo .season").textContent = album.season;
-  //   document.querySelector(".produktinfo .usagetype").textContent = album.usagetype;
   //   document.querySelector("img").src = ``;
 }
 
