@@ -2,7 +2,7 @@
 form {
   display: grid;
   padding: 2rem;
-  background: hsl(264 30% 96%);
+  background: hsl(32, 76%, 95%);
   border-radius: 8px;
   gap: 20px;
 }
@@ -22,6 +22,10 @@ button {
 
 .boks {
   width: 100%;
+}
+
+body {
+  background-color: #fffbf5;
 }
 
 /* Global styles */
@@ -72,10 +76,6 @@ button {
   border-radius: 2rem;
   margin: 1rem;
   font-family: kiln-sans, sans-serif;
-}
-
-select {
-  background-color: var;
 }
 
 /* == Body styles == */

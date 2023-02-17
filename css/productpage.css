@@ -1,4 +1,7 @@
 /* PRODUCTPAGE */
+main {
+  margin: 0 10rem 13rem 10rem;
+}
 
 .product_h1 {
   font-size: 3rem;
@@ -58,4 +61,8 @@ button {
     gap: 55px;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.spotify {
+  grid-column: 1/3;
 }
