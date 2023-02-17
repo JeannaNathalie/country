@@ -21,6 +21,12 @@
     gap: 5rem;
 }
 
+.regularProducts .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
 
 
 /* ---------------------Første forsøg------------------- */
