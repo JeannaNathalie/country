@@ -25,11 +25,7 @@
     justify-content: center;
     gap: 5px;
 }
-.regularProducts .links{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
+
 .price{
     background-color: #3c4c8c;
     color: white;
@@ -38,14 +34,7 @@
     display: flex;
     justify-content: center;
 }
-.readMore{
-    background-color: #3c4c8c;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-}
+
 
 /* ---------------------Første forsøg------------------- */
 /* .main_grid{
