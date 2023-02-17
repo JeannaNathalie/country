@@ -1,9 +1,5 @@
 /* FORSIDE */
 
-main {
-  gap: 2rem;
-}
-
 .grid_index {
   display: grid;
   grid-template-columns: 1fr 1fr;
