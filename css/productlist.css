@@ -1,1 +1,18 @@
 /* PRODUCTLIST */
+.main_grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+}
+.search_bar{
+    grid-column: 1;
+    grid-row: span;
+    background-color: coral;
+}
+.img{
+    background-color: darkcyan;
+}
+.main_grid .subitems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
