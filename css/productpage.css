@@ -4,6 +4,7 @@
   font-size: 3rem;
   font-family: "PT Serif", serif;
   font-weight: 100;
+  color: var(--secondary-color);
 }
 
 .product_h2 {
@@ -11,6 +12,7 @@
   font-family: "pt-serif", serif;
   font-weight: 100;
   font-style: normal;
+  text-transform: capitalize;
 }
 
 .oversigt {
@@ -26,6 +28,10 @@
   font-weight: bolder;
   font-style: normal;
   padding-top: 1.5rem;
+}
+
+p {
+  color: var(--secondary-color);
 }
 
 button {
