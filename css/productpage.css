@@ -30,12 +30,16 @@
   padding-top: 1.5rem;
 }
 
+h2 {
+  text-transform: capitalize;
+}
+
 p {
   color: var(--secondary-color);
 }
 
 button {
-  background-color: #6294e9;
+  background-color: #3c4c8c;
   color: white;
   border: none;
   padding: 1rem 3rem 1rem 3rem;
