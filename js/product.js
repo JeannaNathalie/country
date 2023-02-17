@@ -1,9 +1,14 @@
 // https://countrysongs-b7f5.restdb.io/rest/country-albums
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const id = urlParams.get("id");
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 
-fetch("https://countrysongs-b7f5.restdb.io/rest/country-albums" + id)
+fetch("https://countrysongs-b7f5.restdb.io/rest/country-albums/" + id, {
+  method: "get",
+  headers: {
+    "x-apikey": "63eab3b5478852088da681f2",
+  },
+})
   .then((response) => response.json())
   .then((data) => showAlbum(data));
 
@@ -15,6 +20,7 @@ function showAlbum(album) {
   document.querySelector(".produktinfo .year").textContent = album.year;
   document.querySelector(".produktinfo .tracks").textContent = album.tracks;
   document.querySelector(".produktinfo .price").textContent = album.price;
+  document.querySelector(".spotify").innerHTML = album.spotify;
   //   document.querySelector(".produktinfo .season").textContent = album.season;
   //   document.querySelector(".produktinfo .usagetype").textContent = album.usagetype;
   //   document.querySelector("img").src = ``;
