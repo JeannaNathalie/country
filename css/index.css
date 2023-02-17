@@ -14,8 +14,8 @@
   }
 
   h2 {
-    margin-left: 2rem;
-    margin: 1rem;
+    margin-left: 5rem;
+    margin: 2rem;
   }
 
   /* Slideshow container */
@@ -36,8 +36,8 @@
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -1rem;
+    padding: 1rem;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 1rem;
@@ -56,17 +56,6 @@
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
   }
 
   /* The dots/bullets/indicators */
