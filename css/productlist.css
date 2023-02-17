@@ -1,1 +1,59 @@
 /* PRODUCTLIST */
+/* ---------------------Andet forsøg------------------- */
+/* ---------------------tekst styling------------------- */
+.album{
+    font-family: "PT Serif", serif;
+    color: #d35b2b;
+}
+.artist{
+    font-family: "PT Serif", serif;
+    color: #d35b2b;
+}
+.genre{
+    font-family: "PT Serif", serif;
+    color: #d35b2b;
+}
+.price{
+    font-family: "PT Serif", serif;
+    color: #d35b2b;
+}
+
+/* -----------------Product list grid---------------- */
+.link{
+    text-decoration: none;
+}
+.productlistGrid{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+.album, .artist{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------------------Første forsøg------------------- */
+/* .main_grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+}
+.search_bar{
+    grid-column: 1;
+    grid-row: span;
+    background-color: coral;
+}
+.img{
+    grid-column: 2 / 5;
+    background-color: darkcyan;
+}
+.main_grid .subitems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
