@@ -15,6 +15,9 @@
 }
 
 /* -----------------Product list grid---------------- */
+.link{
+    text-decoration: none;
+}
 .productlistGrid{
     display: grid;
     grid-template-columns: 200px 1fr 1fr 1fr 1fr;
@@ -25,12 +28,8 @@
     justify-content: center;
     gap: 5px;
 }
-
 .price{
-    background-color: #3c4c8c;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
+    color: rgb(12, 81, 131);
     display: flex;
     justify-content: center;
 }
