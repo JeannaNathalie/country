@@ -1,4 +1,9 @@
 /* PRODUCTLIST */
+.productlistGrid{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
 
 /* ---------------------Første forsøg------------------- */
 /* .main_grid{
