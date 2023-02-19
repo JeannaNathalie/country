@@ -1,10 +1,10 @@
 /* PRODUCTPAGE */
 main {
-  margin: 0 10rem 13rem 10rem;
+  margin: 0 2rem 8rem 2rem;
 }
 
 .product_h1 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-family: "PT Serif", serif;
   font-weight: 100;
   color: var(--secondary-color);
@@ -12,7 +12,7 @@ main {
 }
 
 .product_h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "pt-serif", serif;
   font-weight: 100;
   font-style: normal;
@@ -20,7 +20,7 @@ main {
 }
 
 .oversigt {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "pt-serif", serif;
   font-weight: 400;
   font-style: normal;
@@ -29,7 +29,7 @@ main {
 }
 
 .price {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "pt-serif", serif;
   font-weight: bolder;
   font-style: normal;
@@ -56,6 +56,12 @@ button {
   border-radius: 2rem;
   margin: 1rem;
   font-family: kiln-sans, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #6779c1;
 }
 
 @media (min-width: 900px) {
@@ -63,6 +69,26 @@ button {
     display: grid;
     gap: 55px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  main {
+    margin: 0 10rem 13rem 10rem;
+  }
+
+  .product_h1 {
+    font-size: 2.5rem;
+  }
+
+  .product_h2 {
+    font-size: 4rem;
+  }
+
+  .oversigt {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 2rem;
   }
 }
 

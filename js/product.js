@@ -19,7 +19,7 @@ function showAlbum(album) {
   document.querySelector(".produktinfo h2").textContent = album.titel;
   document.querySelector(".produktinfo .year").textContent = album.year;
   document.querySelector(".produktinfo .tracks").textContent = album.tracks + " tracks";
-  document.querySelector(".produktinfo .price").textContent = album.price + ",-";
+  document.querySelector(".produktinfo .price").textContent = "Pris " + album.price + ",-";
   document.querySelector(".spotify").innerHTML = album.spotify;
   //   document.querySelector("img").src = ``;
 }
