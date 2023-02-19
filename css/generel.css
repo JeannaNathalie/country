@@ -63,6 +63,9 @@ ul {
   list-style-type: none;
   font-size: 3rem;
 }
+
+.headerNavigation img {
+}
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -71,20 +74,15 @@ header {
   width: 100%;
 }
 
-.icons {
-  display: flex;
-  flex-direction: row;
+ul {
   margin: 0%;
 }
+
 .logo {
   max-width: 40%;
   margin: 1rem;
 }
 
-ul img {
-  max-width: 50%;
-  background-color: #3c4c8c;
-}
 header a {
   text-decoration: none;
   color: var(--text-color);
