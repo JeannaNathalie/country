@@ -26,8 +26,27 @@
       <!-----------------------Andet forsøg--------------------->
       <!--------------------Container------------------->
       <div class="productlistGrid">
-        <!--------------------Søgebar------------------->
-        <div class="search_bar">Søgefelt</div>
+        <!----------------------Søgebar--------------------->
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search for names.."
+        />
+        <template id="searchNames">
+          <ul id="myUL">
+            <li><a href="/img/1.jpg">Billy</a></li>
+            <li><a href="#">Taylor</a></li>
+
+            <li><a href="#">Dolly</a></li>
+            <li><a href="#">Balke</a></li>
+
+            <li><a href="#">Johnny</a></li>
+            <li><a href="#">Willie</a></li>
+            <li><a href="#">Rascal</a></li>
+            <li><a href="#">Shania</a></li>
+          </ul>
+        </template>
         <!--------------------Første 4 produkter------------------->
         <template id="regularProductsTemplate">
           <a href="productpage.html" class="link">
@@ -67,68 +86,6 @@
           </article>
         </a>
       </div>
-      <!----------------------Søgebar--------------------->
-
-      <!-----------------------Første forsøg--------------------->
-      <!-- <div class="main_grid">
-        <div class="search_bar">Søgefelt</div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-
-        <div class="img subitems">
-          <div>img</div>
-          <div>genre</div>
-          <div>Titel</div>
-          <div>Kunster</div>
-        </div>
-      </div> -->
     </main>
     <footer></footer>
   </body>
