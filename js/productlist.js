@@ -20,9 +20,10 @@ function showAlbums(albums){
     //Lave en kopi
     const copy = template.cloneNode(true);
     //Ændre indhold
-
+    copy.querySelector("h3").textContent=album.titel;
     //Appende
     document.querySelector("main").appendChild(copy);
   }
 
- 
+ // "Album" i stedet for "Product"
+ //Hvordan henter vi vores data fra databasen?
