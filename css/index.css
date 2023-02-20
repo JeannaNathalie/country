@@ -6,21 +6,33 @@
     grid-template-rows: 1fr;
     gap: 3rem;
     margin: 3rem;
+    padding: 5rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
   }
 
-  div {
+  .left {
+    padding-right: 2rem;
     gap: 1rem;
     margin: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .right {
+    padding-left: 2rem;
+    gap: 1rem;
+    margin: 1rem;
+    padding-bottom: 2rem;
   }
 
   h2 {
     margin-left: 5rem;
-    margin: 2rem;
+    margin-top: 10rem;
   }
 
   /* Slideshow container */
   .slideshowContainer {
-    max-width: 50rem;
+    max-width: 83rem;
     position: relative;
     margin: auto;
   }
@@ -35,7 +47,7 @@
   .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     margin-top: -1rem;
     padding: 1rem;
@@ -73,7 +85,7 @@
 
   .active,
   .dot:hover {
-    background-color: #c0c0c0;
+    background-color: var(--secondary-color);
   }
 
   /* Fading animation */
