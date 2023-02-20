@@ -9,6 +9,7 @@ main {
   font-weight: 100;
   color: var(--secondary-color);
   padding-top: 0.1rem;
+  font-style: italic;
 }
 
 .product_h2 {
