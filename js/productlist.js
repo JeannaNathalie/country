@@ -3,6 +3,61 @@
 // const urlParams = new URLSearchParams(window.location.search);
 // const id = urlParams.get("id");
 
-fetch("https://countrysongs-b7f5.restdb.io/rest/country-albums" + id)
+fetch("https://countrysongs-b7f5.restdb.io/rest/country-albums", //https://countrysongs-b7f5.restdb.io/rest/country-albums
+  {method: "get",headers: {"x-apikey": "63eab3b5478852088da681f2",}}) 
   .then((response) => response.json())
-  .then((data) => showAlbum(data));
+  .then((data) => showAlbums(data));
+
+function showAlbums(albums){
+  // looper igennem og kalder showAlbum
+  albums.forEach(showAlbum)
+    
+  }
+
+  function showAlbum(album){
+    console.log(album);
+    //Fange template
+    const template = document.querySelector("#regularProductsTemplate").content;
+    //Lave en kopi
+    const copy = template.cloneNode(true);
+    //Ændre indhold
+    copy.querySelector("h3").textContent=album.titel;
+    copy.querySelector("h4").textContent=album.artist;
+    copy.querySelector("p").textContent=album.price;
+    copy.querySelector("img").textContent=album.image;
+    //Appende
+    document.querySelector(".productlistGrid").appendChild(copy);
+  }
+
+// {"_id":"63e9f6fbaa8607500004fa40",
+// "titel":"Southern Rain",
+// "year":2000,
+// "tracks":11,
+// "artist":"Billy Ray Cyrus",
+// "image":"",
+// "spotify":"<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/1GO5wJHanTLmWL3Ap3zqpw?utm_source=generator&theme=0\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+// "price":149},
+
+ // "Album" i stedet for "Product"
+ //Hvordan henter vi vores data fra databasen?
+
+//----------------------Søgebar--------------------- 
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}

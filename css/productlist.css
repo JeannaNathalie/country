@@ -1,59 +1,42 @@
 /* PRODUCTLIST */
-/* ---------------------Andet forsøg------------------- */
-/* ---------------------tekst styling------------------- */
-.album{
+
+.album{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
-.artist{
+.artist{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
-.genre{
+.genre{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
-.price{
+.price{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
 
-/* -----------------Product list grid---------------- */
 .link{
     text-decoration: none;
 }
-.productlistGrid{
+.album, .artist, .price{
+    gap: 2px;
+}
+
+@media (min-width: 900px){ /* Skærmstørrelse */
+.link{
+    text-decoration: none;
+}
+.productlistGrid{ /* Det store grid */
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 5rem;
 }
-.album, .artist{
+.album, .artist, .price{
     display: flex;
     justify-content: center;
     gap: 5px;
 }
-.price{
-    display: flex;
-    justify-content: center;
-}
 
-
-/* ---------------------Første forsøg------------------- */
-/* .main_grid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5rem;
 }
-.search_bar{
-    grid-column: 1;
-    grid-row: span;
-    background-color: coral;
-}
-.img{
-    grid-column: 2 / 5;
-    background-color: darkcyan;
-}
-.main_grid .subitems{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
