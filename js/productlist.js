@@ -22,6 +22,9 @@ function showAlbums(albums){
     const copy = template.cloneNode(true);
     //Ændre indhold
     copy.querySelector("h3").textContent=album.titel;
+    copy.querySelector("h4").textContent=album.artist;
+    copy.querySelector("p").textContent=album.price;
+    copy.querySelector("img").textContent=album.image;
     //Appende
     document.querySelector(".productlistGrid").appendChild(copy);
   }
