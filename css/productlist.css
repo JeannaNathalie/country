@@ -1,42 +1,51 @@
 /* PRODUCTLIST */
 
-.album{ /* Tekststyling */
-    font-family: "PT Serif", serif;
-    color: #d35b2b;
+.album {
+  /* Tekststyling */
+  font-family: "PT Serif", serif;
+  color: #d35b2b;
 }
-.artist{ /* Tekststyling */
-    font-family: "PT Serif", serif;
-    color: #d35b2b;
+.artist {
+  /* Tekststyling */
+  font-family: "PT Serif", serif;
+  color: #d35b2b;
 }
-.genre{ /* Tekststyling */
-    font-family: "PT Serif", serif;
-    color: #d35b2b;
+.genre {
+  /* Tekststyling */
+  font-family: "PT Serif", serif;
+  color: #d35b2b;
 }
-.price{ /* Tekststyling */
-    font-family: "PT Serif", serif;
-    color: #d35b2b;
-}
-
-.link{
-    text-decoration: none;
-}
-.album, .artist, .price{
-    gap: 2px;
+.price {
+  /* Tekststyling */
+  font-family: "PT Serif", serif;
+  color: #d35b2b;
 }
 
-@media (min-width: 900px){ /* Skærmstørrelse */
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.productlistGrid{ /* Det store grid */
+.album,
+.artist,
+.price {
+  gap: 2px;
+}
+
+@media (min-width: 900px) {
+  /* Skærmstørrelse */
+  .link {
+    text-decoration: none;
+  }
+  .productlistGrid {
+    /* Det store grid */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5rem;
-}
-.album, .artist, .price{
+  }
+  .album,
+  .artist,
+  .price {
     display: flex;
     justify-content: center;
     gap: 5px;
-}
-
+  }
 }
