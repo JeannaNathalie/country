@@ -23,46 +23,30 @@
       </nav>
     </header>
     <main>
-      <!--------------------Container------------------->
       <div class="productlistGrid">
-        <!----------------------Søgebar--------------------->
-        <input
-          type="text"
-          id="myInput"
-          onkeyup="myFunction()"
-          placeholder="Search for names.."
-        />
-        <!-- <template id="searchNames">
-          <ul id="myUL">
-            <li><a href="#">Billy</a></li>
-            <li><a href="#">Taylor</a></li>
+        <!-- Grid contatiner -->
 
-            <li><a href="#">Dolly</a></li>
-            <li><a href="#">Balke</a></li>
-
-            <li><a href="#">Johnny</a></li>
-            <li><a href="#">Willie</a></li>
-            <li><a href="#">Rascal</a></li>
-            <li><a href="#">Shania</a></li>
-          </ul>
-        </template> -->
-        <!--------------------template------------------->
         <template id="regularProductsTemplate">
+          <!-- Template for produkter -->
+
           <a href="productpage.html" class="link">
+            <!-- Link til productpage -->
             <article class="regularProducts">
               <img src="/img/1.jpg" alt="Billy Ray Cyrus" />
+              <!-- Billiede -->
               <h3 class="album">Southern Rain</h3>
+              <!-- Albumnavn -->
               <h4 class="artist billy">Billy Ray Cyrus</h4>
+              <!-- Artistnavn -->
               <p class="price">149</p>
+              <!-- Prisen -->
             </article>
           </a>
         </template>
-
-      
-        </a>
       </div>
     </main>
     <footer></footer>
     <script src="./js/productlist.js"></script>
+    <!-- Link til JavaScript -->
   </body>
 </html>

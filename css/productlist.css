@@ -1,83 +1,35 @@
 /* PRODUCTLIST */
-/* ---------------------Andet forsøg------------------- */
-/* ---------------------tekst styling------------------- */
-.album{
+
+.album{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
-.artist{
+.artist{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
-.genre{
+.genre{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
-.price{
+.price{ /* Tekststyling */
     font-family: "PT Serif", serif;
     color: #d35b2b;
 }
 
-/* -----------------Product list grid---------------- */
+@media (min-width: 900px){ /* Skærmstørrelse */
 .link{
     text-decoration: none;
 }
-.productlistGrid{
+.productlistGrid{ /* Det store grid */
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 5rem;
 }
-
-.album, .artist{
+.album, .artist, .price{
     display: flex;
     justify-content: center;
     gap: 5px;
 }
-.price{
-    display: flex;
-    justify-content: center;
+
 }
-
-/* ----------------------Søgebar--------------------- */
-#myInput {
-    grid-column: 1; /* Placering i grid */
-    grid-row: 1; /* Placering i grid */
-
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    height: 3rem;
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 12px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    border-radius: 5px;
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  
-  #myUL {
-    grid-column: 1;
-    grid-row: 2;
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-
-  }
-  
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #fffbf5; /* Grey background color */
-    padding: 5px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: #d35b2b; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
