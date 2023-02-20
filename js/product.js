@@ -12,7 +12,7 @@ fetch("https://countrysongs-b7f5.restdb.io/rest/country-albums/" + id, {
   .then((response) => response.json())
   .then((data) => showAlbum(data));
 
-//henter class'er og sætter det på den skal hente ind på produktet (fx: textContent = product.productdisplayname;)
+//henter class'er og sætter det på den skal hente ind på produktet (fx: textContent = album.album.artist;)
 function showAlbum(album) {
   console.log(album);
   document.querySelector(".produktinfo h1").textContent = album.artist;
@@ -21,7 +21,7 @@ function showAlbum(album) {
   document.querySelector(".produktinfo .tracks").textContent = album.tracks + " tracks";
   document.querySelector(".produktinfo .price").textContent = "Pris " + album.price + ",-";
   document.querySelector(".spotify").innerHTML = album.spotify;
-  //   document.querySelector("img").src = ``;
+  document.querySelector("img").src = `https://countrysongs-b7f5.restdb.io/rest/country-albums/image/${album.id}.webp`;
 }
 
 // {"_id":"63e9f6fbaa8607500004fa40",
