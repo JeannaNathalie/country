@@ -1,97 +1,135 @@
 /* FORSIDE */
-@media (min-width: 900px) {
+/* Slideshow container */
+.slideshowContainer {
+  max-width: 83rem;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -1rem;
+  padding: 1rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--primary-color);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.grid_index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.shadow {
+  box-shadow: 8px 8px 10px 10px #eeeae5;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1000px) {
   .grid_index {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 3rem;
-    margin: 3rem;
+    margin: 2rem;
+    padding: 4rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
   }
 
-  div {
+  .left {
+    padding-right: 2rem;
     gap: 1rem;
     margin: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .right {
+    padding-left: 2rem;
+    gap: 1rem;
+    margin: 1rem;
+    padding-bottom: 2rem;
   }
 
   h2 {
     margin-left: 5rem;
-    margin: 2rem;
-  }
-
-  /* Slideshow container */
-  .slideshowContainer {
-    max-width: 50rem;
-    position: relative;
-    margin: auto;
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -1rem;
-    padding: 1rem;
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 3px 3px 3px 3px;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: var(--primary-color);
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active,
-  .dot:hover {
-    background-color: #c0c0c0;
-  }
-
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  img:hover {
-    opacity: 0.8;
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+    margin-top: 8rem;
+    font-size: 4rem;
   }
 }
