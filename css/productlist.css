@@ -1,34 +1,39 @@
 /* PRODUCTLIST */
 
-.album{ /* Tekststyling */
+.album{ /* Textstyling */
     font-family: "PT Serif", serif;
-    color: #d35b2b;
+    color: black;
 }
-.artist{ /* Tekststyling */
+.artist{ /* Textstyling */
     font-family: "PT Serif", serif;
-    color: #d35b2b;
+    color: black;
 }
-.genre{ /* Tekststyling */
+.genre{ /* Textstyling */
     font-family: "PT Serif", serif;
-    color: #d35b2b;
+    color:black;
 }
-.price{ /* Tekststyling */
+.price{ /* Textstyling */
     font-family: "PT Serif", serif;
-    color: #d35b2b;
+    color:black;
 }
-
 .link{
     text-decoration: none;
 }
 .album, .artist, .price{
     gap: 2px;
 }
-
-@media (min-width: 900px){ /* Skærmstørrelse */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+img:hover {
+    opacity: 0.8;
+}
+@media (min-width: 900px){ /* Screensize */
 .link{
     text-decoration: none;
 }
-.productlistGrid{ /* Det store grid */
+.productlistGrid{ /* Container grid */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 5rem;
@@ -38,5 +43,10 @@
     justify-content: center;
     gap: 5px;
 }
-
+.album:hover, .artist:hover, .price:hover{
+    color: #d35b2b;;
+}
+main {
+    margin: 5rem 10rem 13rem 10rem;
+}
 }
