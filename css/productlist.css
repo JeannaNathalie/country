@@ -30,7 +30,6 @@
 img:hover {
     opacity: 0.8;
 }
-
 @media (min-width: 900px){ /* Screensize */
 .link{
     text-decoration: none;
@@ -48,5 +47,7 @@ img:hover {
 .album:hover, .artist:hover, .price:hover{
     color: #d35b2b;;
 }
-
+main {
+    margin: 0 10rem 13rem 10rem;
+}
 }
