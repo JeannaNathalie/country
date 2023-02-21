@@ -32,7 +32,6 @@ body {
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "pt-serif", serif;
 }
 
 h1 {
@@ -80,7 +79,6 @@ button {
 
 /* == Body styles == */
 body {
-  font-family: "pt-serif", serif;
   line-height: 1.6;
 }
 
