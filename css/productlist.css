@@ -1,14 +1,28 @@
 /* PRODUCTLIST */
-
+.productlistGrid{ /* Iphone screenview */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+main { /* Side space */
+    margin: 5rem 6rem 5rem 6rem;
+}
+.album:hover,
+.artist:hover,
+.price:hover {
+  color: #d35b2b;
+}
 .album {
   /* Textstyling */
   font-family: "PT Serif", serif;
   color: black;
+  font-size: 1.2rem;
 }
 .artist {
   /* Textstyling */
   font-family: "PT Serif", serif;
   color: black;
+  font-size: 1rem;
 }
 .genre {
   /* Textstyling */
@@ -19,6 +33,7 @@
   /* Textstyling */
   font-family: "PT Serif", serif;
   color: black;
+  font-size: 0.8rem;
 }
 .link {
   text-decoration: none;
@@ -35,30 +50,22 @@
 img:hover {
   opacity: 0.8;
 }
-@media (min-width: 900px) {
-  /* Screensize */
-  .link {
+@media (min-width: 900px) { /* Computer Screensize */
+.link {
     text-decoration: none;
-  }
-  .productlistGrid {
+}
+.productlistGrid {
     /* Container grid */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5rem;
-  }
-  .album,
-  .artist,
-  .price {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-  }
 }
 .album:hover,
 .artist:hover,
 .price:hover {
   color: #d35b2b;
 }
-main {
+main { /* Side space */
   margin: 5rem 10rem 13rem 10rem;
+}
 }
