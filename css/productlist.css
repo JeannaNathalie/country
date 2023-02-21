@@ -1,6 +1,4 @@
 /* PRODUCTLIST */
-
-<<<<<<< HEAD
 .album{ /* Textstyling */
     font-family: "PT Serif", serif;
     color: black;
@@ -19,7 +17,7 @@
 }
 .link{
     text-decoration: none;
-=======
+}
 .album {
   /* Tekststyling */
   font-family: "PT Serif", serif;
@@ -40,18 +38,13 @@
   font-family: "PT Serif", serif;
   color: #d35b2b;
 }
-
 .link {
   text-decoration: none;
->>>>>>> forside2
 }
-.album,
-.artist,
-.price {
+.album, .artist, .price {
   gap: 2px;
 }
-<<<<<<< HEAD
-.fade {
+.fade { /* Image fade */
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -62,30 +55,18 @@ img:hover {
 .link{
     text-decoration: none;
 }
-.productlistGrid{ /* Container grid */
-=======
-
-@media (min-width: 900px) {
-  /* Skærmstørrelse */
-  .link {
-    text-decoration: none;
-  }
-  .productlistGrid {
-    /* Det store grid */
->>>>>>> forside2
+.productlistGrid { /* Det store grid */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5rem;
   }
-  .album,
-  .artist,
-  .price {
+.album,
+.artist,
+.price {
     display: flex;
     justify-content: center;
     gap: 5px;
   }
-}
-<<<<<<< HEAD
 .album:hover, .artist:hover, .price:hover{
     color: #d35b2b;;
 }
@@ -93,5 +74,3 @@ main {
     margin: 5rem 10rem 13rem 10rem;
 }
 }
-=======
->>>>>>> forside2
