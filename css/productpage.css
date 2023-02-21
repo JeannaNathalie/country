@@ -9,6 +9,7 @@ main {
   font-weight: 100;
   color: var(--secondary-color);
   padding-top: 0.1rem;
+  font-style: italic;
 }
 
 .product_h2 {
@@ -72,7 +73,7 @@ button:hover {
   }
 
   main {
-    margin: 0 10rem 13rem 10rem;
+    margin: 3rem 10rem 13rem 10rem;
   }
 
   .product_h1 {

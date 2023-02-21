@@ -16,7 +16,7 @@ fetch("https://countrysongs-b7f5.restdb.io/rest/country-albums/" + id, {
 function showAlbum(album) {
   console.log(album);
   document.querySelector(".produktinfo h1").textContent = album.artist;
-  document.querySelector(".produktinfo h2").textContent = album.titel;
+  document.querySelector(".produktinfo h2").textContent = "''" + album.titel + "''";
   document.querySelector(".produktinfo .year").textContent = album.year;
   document.querySelector(".produktinfo .tracks").textContent = album.tracks + " tracks";
   document.querySelector(".produktinfo .price").textContent = "Pris " + album.price + ",-";
