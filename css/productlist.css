@@ -16,11 +16,13 @@ main { /* Side space */
   /* Textstyling */
   font-family: "PT Serif", serif;
   color: black;
+  font-size: 1.2rem;
 }
 .artist {
   /* Textstyling */
   font-family: "PT Serif", serif;
   color: black;
+  font-size: 1rem;
 }
 .genre {
   /* Textstyling */
@@ -31,6 +33,7 @@ main { /* Side space */
   /* Textstyling */
   font-family: "PT Serif", serif;
   color: black;
+  font-size: 0.8rem;
 }
 .link {
   text-decoration: none;
