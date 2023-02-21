@@ -1,11 +1,16 @@
 /* PRODUCTLIST */
-.productlistGrid{
+.productlistGrid{ /* Iphone screenview */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
 }
-main {
+main { /* Side space */
     margin: 5rem 6rem 5rem 6rem;
+}
+.album:hover,
+.artist:hover,
+.price:hover {
+  color: #d35b2b;
 }
 .album {
   /* Textstyling */
@@ -42,7 +47,7 @@ main {
 img:hover {
   opacity: 0.8;
 }
-@media (min-width: 900px) { /* Screensize */
+@media (min-width: 900px) { /* Computer Screensize */
 .link {
     text-decoration: none;
 }
@@ -52,13 +57,12 @@ img:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5rem;
 }
-
 .album:hover,
 .artist:hover,
 .price:hover {
   color: #d35b2b;
 }
-main {
+main { /* Side space */
   margin: 5rem 10rem 13rem 10rem;
 }
 }
