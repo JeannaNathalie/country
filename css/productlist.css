@@ -1,23 +1,27 @@
 /* PRODUCTLIST */
 
-.album{ /* Textstyling */
-    font-family: "PT Serif", serif;
-    color: black;
+.album {
+  /* Textstyling */
+  font-family: "PT Serif", serif;
+  color: black;
 }
-.artist{ /* Textstyling */
-    font-family: "PT Serif", serif;
-    color: black;
+.artist {
+  /* Textstyling */
+  font-family: "PT Serif", serif;
+  color: black;
 }
-.genre{ /* Textstyling */
-    font-family: "PT Serif", serif;
-    color:black;
+.genre {
+  /* Textstyling */
+  font-family: "PT Serif", serif;
+  color: black;
 }
-.price{ /* Textstyling */
-    font-family: "PT Serif", serif;
-    color:black;
+.price {
+  /* Textstyling */
+  font-family: "PT Serif", serif;
+  color: black;
 }
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
 .album,
 .artist,
@@ -25,17 +29,19 @@
   gap: 2px;
 }
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-@media (min-width: 900px){ /* Screensize */
-.link{
+@media (min-width: 900px) {
+  /* Screensize */
+  .link {
     text-decoration: none;
-}
-.productlistGrid{ /* Container grid */
+  }
+  .productlistGrid {
+    /* Container grid */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5rem;
@@ -48,10 +54,11 @@ img:hover {
     gap: 5px;
   }
 }
-.album:hover, .artist:hover, .price:hover{
-    color: #d35b2b;;
+.album:hover,
+.artist:hover,
+.price:hover {
+  color: #d35b2b;
 }
 main {
-    margin: 5rem 10rem 13rem 10rem;
-}
+  margin: 5rem 10rem 13rem 10rem;
 }
