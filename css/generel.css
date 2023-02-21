@@ -34,6 +34,10 @@ img {
   display: block;
 }
 
+img:hover {
+  opacity: 0.8;
+}
+
 /*FARVER/HEADER + MARGIN PÅ ALT*/
 
 h1 {
