@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <link rel="stylesheet" href="css/productpage.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rqd4dkx.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/upg1bti.css" />
+    <title>Form</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/generel.css">
-  <link rel="stylesheet" href="css/kontakt.css">
-  <link rel="stylesheet" href="css/productpage.css">
-  <link rel="stylesheet" href="https://use.typekit.net/rqd4dkx.css">
-  <link rel="stylesheet" href="https://use.typekit.net/upg1bti.css">
-  <title>Form</title>
-</head>
-
-<body>
-  <header>
-    <a href="index.html">
-      <div class="logo">
-        <img src="/img/country_logo.svg" alt="Logo">
-      </div>
-    </a>
-    <nav class="headerNavigation">
-      <ul>
-        <li><a href="kontakt.html">KONTAKT</a></li>
-        <li><a href="productlist.html">MUSIK</a></li>
-        <div class="icons">
-          <li><img src="img/kurv.svg" alt="kurv"></li>
-          <li><img src="img/søg.svg" alt="søg"></li>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">
+          <img src="img/country_logo.svg" alt="Logo" />
         </div>
-      </ul>
-    </nav>
-  </header>
+      </a>
+      <nav class="headerNavigation">
+        <ul>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          <li><a href="productlist.html">MUSIK</a></li>
+          <div class="icons">
+            <li><img src="img/kurv.svg" alt="kurv" /></li>
+            <li><img src="img/søg.svg" alt="søg" /></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section>
-      <header>
-        <h2>Kontakt os</h2>
-        <p>Udfyld formularen med det album du ønsker, at vi får tilføjet til vores webshop.</p>
-      </header>
+    <main>
+      <section>
+        <header>
+          <h2>Kontakt os</h2>
+          <p>Udfyld formularen med det album du ønsker, at vi får tilføjet til vores webshop.</p>
+        </header>
 
-      <form name="kontakt" netlify>
-        <!-- Formular-indhold -->
-        <div class="form-felt">
-          <label for="full-name">Navn</label>
-          <input placeholder="Dit navn" id="full-name" name="fname" type="text" required>
-        </div>
+        <form name="kontakt" netlify>
+          <!-- Formular-indhold -->
+          <div class="form-felt">
+            <label for="full-name">Navn</label>
+            <input placeholder="Dit navn" id="full-name" name="fname" type="text" required />
+          </div>
 
-        <div class="form-felt">
-          <label for="email">E-mail</label>
-          <input placeholder="din@mail.com" id="email" name="email" type="email" required>
-        </div>
+          <div class="form-felt">
+            <label for="email">E-mail</label>
+            <input placeholder="din@mail.com" id="email" name="email" type="email" required />
+          </div>
 
-        <div class="form-felt">
-          <label>
-            Musikformat<br>
-            <select name="type">
-              <option value="format">Vælg type</option>
-              <option value="CD">CD</option>
-              <option value="LP">LP</option>
-            </select>
-          </label>
-        </div>
+          <div class="form-felt">
+            <label>
+              Musikformat<br />
+              <select name="type">
+                <option value="format">Vælg type</option>
+                <option value="CD">CD</option>
+                <option value="LP">LP</option>
+              </select>
+            </label>
+          </div>
 
-        <div class="form-felt">
-          <label for="artist-name">Kunstner</label>
-          <input placeholder="fx. Johnny Cash" id="artist-name" name="aname" type="text" required>
-        </div>
+          <div class="form-felt">
+            <label for="artist-name">Kunstner</label>
+            <input placeholder="fx. Johnny Cash" id="artist-name" name="aname" type="text" required />
+          </div>
 
-        <div class="form-felt">
-          <label for="album-name">Titel på album</label>
-          <input placeholder="Album" id="album-name" name="album" type="text" required>
-        </div>
+          <div class="form-felt">
+            <label for="album-name">Titel på album</label>
+            <input placeholder="Album" id="album-name" name="album" type="text" required />
+          </div>
 
-        <!-- Fjerner div for at boksen går helt ud til kanterne -->
-        <div class="form-felt">
-          <label>
-            Besked (valgfri) <br>
-            <textarea name="besked" rows="5" class="boks"></textarea>
-          </label>
-        </div>
+          <!-- Fjerner div for at boksen går helt ud til kanterne -->
+          <div class="form-felt">
+            <label>
+              Besked (valgfri) <br />
+              <textarea name="besked" rows="5" class="boks"></textarea>
+            </label>
+          </div>
 
-        <button>Indsend</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>© KEA, Københavns Erhversakademi</p>
-    <p>Designed by Jeanna, Sophie, Laura & Kristine</p>
-  </footer>
-</body>
-
+          <button>Indsend</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© KEA, Københavns Erhversakademi</p>
+      <p>Designed by Jeanna, Sophie, Laura & Kristine</p>
+    </footer>
+  </body>
 </html>
