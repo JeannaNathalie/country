@@ -26,7 +26,7 @@ function showAlbum(album) {
   copy.querySelector("h3").textContent = album.titel;
   copy.querySelector("h4").textContent = album.artist;
   copy.querySelector("p").textContent = album.price;
-  copy.querySelector("img").textContent = album.image;
+  copy.querySelector("img").src = album.image;
   copy.querySelector("a").href = `productpage.html?id=${album._id}`;
   //Appende
   document.querySelector(".productlistGrid").appendChild(copy);

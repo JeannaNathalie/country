@@ -21,7 +21,7 @@ function showAlbum(album) {
   document.querySelector(".produktinfo .tracks").textContent = album.tracks + " tracks";
   document.querySelector(".produktinfo .price").textContent = "Pris " + album.price + ",-";
   document.querySelector(".spotify").innerHTML = album.spotify;
-  document.querySelector("img").src = album.image;
+  document.querySelector(".cover").src = album.image;
 }
 
 // {"_id":"63e9f6fbaa8607500004fa40",
